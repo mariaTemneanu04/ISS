@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" prefHeight="556.0" prefWidth="948.0" spacing="40" style="-fx-background-color: #BEB5AC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.iss.controller.UserManagerController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <VBox alignment="CENTER" prefHeight="516.0" prefWidth="414.0" spacing="10">
+        <VBox alignment="CENTER" prefHeight="426.0" prefWidth="324.0" spacing="10">
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="347.0" styleClass="login-label" text="---- Personal Info ----" />
+
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefHeight="17.0" prefWidth="72.0" text="First Name" textAlignment="CENTER" textFill="#4c392d">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font></Label>
+                <TextField fx:id="firstNameField" prefHeight="25.0" prefWidth="113.0" styleClass="custom-textfield" />
+
+                <Label prefHeight="17.0" prefWidth="55.0" text="Surname" textAlignment="CENTER" textFill="#4c392d">
+                <font>
+                    <Font name="Times New Roman Bold Italic" size="14.0" />
+                </font></Label>
+                <TextField fx:id="surnameField" prefHeight="25.0" prefWidth="113.0" styleClass="custom-textfield" />
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefHeight="17.0" prefWidth="57.0" text="CNP" textAlignment="CENTER" textFill="#4c392d">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                    </font></Label>
+                <TextField fx:id="cnpField" styleClass="custom-textfield" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefHeight="17.0" prefWidth="57.0" text="Address" textFill="#4c392d">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                    </font></Label>
+                <TextField fx:id="addressField" styleClass="custom-textfield" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefHeight="17.0" prefWidth="57.0" text="Phone" textFill="#4c392d">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                    </font></Label>
+                <TextField fx:id="phoneField" styleClass="custom-textfield" />
+            </HBox>
+
+
+            <Label alignment="CENTER" layoutX="10.0" layoutY="139.0" prefHeight="17.0" prefWidth="347.0" styleClass="login-label" text="---- Credentials ----" />
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefHeight="17.0" prefWidth="63.0" text="Username" textFill="#4c392d">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                    </font></Label>
+                <TextField fx:id="usernameField" styleClass="custom-textfield" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10">
+                <Label prefHeight="17.0" prefWidth="65.0" text="Password" textFill="#4c392d">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                    </font></Label>
+                <TextField fx:id="passwordField" styleClass="custom-textfield" />
+            </HBox>
+         <Button onAction="#clearTextFields" prefHeight="36.0" prefWidth="144.0" styleClass="button" text="Clear" />
+
+        </VBox>
+
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#handleSaveAction" prefHeight="36.0" prefWidth="144.0" styleClass="button" text="Add" />
+        </HBox>
+    </VBox>
+
+
+    <ListView fx:id="allReadersListView" prefHeight="460.0" prefWidth="356.0" styleClass="list-view" />
+
+
+</HBox>

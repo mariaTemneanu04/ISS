@@ -1,0 +1,88 @@
+.custom-textfield {
+    -fx-background-color: #FDEBDD;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-text-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-family: "Times New Roman";
+    -fx-padding: 5px 15px;
+    -fx-prompt-text-fill: #BEB5AC;
+    -fx-prompt-text-alignment: center;
+}
+
+.custom-textfield:focused {
+    -fx-border-color: #4C392D;
+    -fx-border-width: 2px;
+}
+
+.readonly-textfield {
+    -fx-background-color: #b1a89f;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+
+    -fx-text-fill: #555555;
+    -fx-font-size: 13px;
+    -fx-font-family: "Times New Roman";
+    -fx-padding: 4px 10px;
+}
+
+.text-style {
+    -fx-font-size: 22px;
+    -fx-font-family: "Times New Roman";
+}
+
+.username-style {
+    -fx-font-size: 10px;
+    -fx-text-fill: grey;
+    -fx-font-style: italic;
+}
+
+.fullname-style {
+    -fx-font-size: 15px;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-text-fill: #4C392D;
+}
+
+.userdetails-style {
+    -fx-font-size: 10px;
+    -fx-text-fill: #FDEBDD;
+    -fx-font-style: italic;
+}
+
+.available-style, .borrowed-style {
+    -fx-font-size: 10px;
+    -fx-text-fill: #008000;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.borrowed-style {
+    -fx-text-fill: #4C392D;
+}
+
+.borrowed-by-style {
+    -fx-font-size: 12px;
+    -fx-font-family: "Times New Roman";
+    -fx-font-style: italic;
+    -fx-text-fill: 	#71797E;
+}
+
+.date-style {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+    -fx-alignment: center-right;
+    -fx-font-family: "Times New Roman";
+}
+
+.overdue-style {
+    -fx-font-size: 12px;
+    -fx-text-fill: #D2042D;
+    -fx-alignment: center-right;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+}
