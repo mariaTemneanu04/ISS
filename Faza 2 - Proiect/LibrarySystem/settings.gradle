@@ -1,7 +1,0 @@
-rootProject.name = 'LibrarySystem'
-include 'Model'
-include 'Server'
-include 'Persistence'
-include 'Networking'
-include 'ClientFX'
-
